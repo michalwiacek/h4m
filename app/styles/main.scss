@@ -1,6 +1,321 @@
-@import 'fonts';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+$break-mobile: 768px;
+$break-medium: 1000px;
+$break-large: 1200px;
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
+  font-family: 'Poppins', sans-serif;
+  color: #474747;
+  background-color: #e7ecf5;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: normal;
+}
+.container {
+  margin: 50px;
+  max-width: 1200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+button {
+  border: none;
+  background: none;
+  padding: none;
+}
+.btn__invest {
+	height: 34px;
+	width: 75px;
+	border-radius: 4px;
+	background: linear-gradient(90deg, #D22D4F 0%, #F86358 100%);
+  box-shadow: 0 2px 4px 0 rgba(250,91,30,0.34);
+  margin-top: 6px;
+}
+.btn__invest:hover {
+  height: 38px;
+  width: 85px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #D22D4F 0%, #F86358 100%);
+  box-shadow: 0 4px 7px 0 rgba(60,23,10,0.34);
+  
+}
+.btn__text {
+	color: white;
+	font-size: 10px;
+	font-weight: 600;
+  line-height: 16px;
+	text-shadow: 0 1px 1px 0 rgba(95,95,95,0.3);
+}
+.umbrella {
+  content: '';
+  background: url(../images/parasol.png) no-repeat;
+  background-size: 130%;
+  display: inline-block;
+  height: 10px;
+  width: 11px;
+  margin-right: 5px;
+  margin-left: -3px;
+}
+.oval {
+  content: '';
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  background-color: #FFBE33;
+  display: inline-block;
+  margin-right: 7px;
+}
+.oko {
+  content: '';
+  background: url(../images/oko.png) no-repeat;
+  height: 20px;
+  width: 26px;
+  display: inline-block;
+  &:hover {
+    background: url(../images/okohover.png) no-repeat;
+  }
+}
+.waga {
+  content: '';
+  background: url(../images/waga.png) no-repeat;
+  display: inline-block;
+  height: 22px;
+  width: 25px;
+  margin-right: 6px;
+  &:hover {
+    background: url(../images/wagahover.png) no-repeat;
+  }
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+  height: 110px;
+  max-width: 1200px;
+  background-color: white;
+  box-shadow: 0px 2px 2px 0px rgba(60, 23, 10, 0.2);
+}
+.table-wrap {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.table {
+  &__altcoins {
+    min-width: 20px;
+    background-color: #FFBE33;
+    display: inline-block;
+    position: relative;
+  }
+  &__mobile {
+    display: none;
+    height: 130px;
+    flex: 3;
+    text-align: left;
+    .block {
+      width: 199px;
+    }
+  }
+  &__m {
+    height: 110px;
+    flex: 2.9;
+    text-align: left;
+    .block {
+      width: 199px;
+      margin-left: 23px;
+      margin-top: 18px;
+    }
+  }
+
+  &__worth {
+    margin: auto;
+    flex: 1.45;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+    .worth {
+      margin-bottom: 1.3em;
+      font-size: 20px;
+      color: #D83550;
+    }
+  }
+
+  &__change-1d {
+    flex: 1;
+    margin: auto;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+  }
+
+  &__change-1m {
+    flex: 1;
+    margin: auto;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+  }
+
+  &__change-3m {
+    flex: 1;
+    margin: auto;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+  }
+
+  &__change-12m {
+    flex: 1;
+    margin: auto;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+  }
+
+  &__change-30m {
+    flex: 1;
+    margin: auto;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+  }
+
+  &__change-ytd {
+    flex: 1;
+    margin: auto;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+  }
+
+  &__action{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: auto;
+    height: 75px;
+    border-left: 1px solid rgba(#D8D8D8, 0.8);
+  }
+}
+.rectangle-4-copy-4 {
+  height: 110px;
+  width: 0px;
+  border: 1px solid #979797;
+  opacity: 0.2;	background-color: #EAEAEA;
+}
+.alt_title {
+  font-size: 10px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  line-height: 16px;
+  position: absolute;
+  margin: auto;
+  text-shadow: 0 1px 1px 0 rgba(153,153,153,0.45);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+p {
+  font-size: 10px;
+  line-height: 0px;
+}
+.currency {
+  margin-bottom: 1.3em;
+  font-size: 10px;
+  color: #474747;
+}
+.percentage {
+  margin-bottom: 1.3em;
+  font-size: 20px;
+  text-align: center;
+}
+button {
+  align-self: center;
+}
+@media screen and (max-width: 1100px) {
+  .table__change-ytd {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .table__change-30m {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .table__change-12m {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .table__change-3m {
+    display: none;
+  }
+}
+@media screen and (max-width: $break-mobile) {
+  .tableRow {
+    height: 245px;
+    width: 360px;
+    flex-direction: row;
+  }
+  .table-wrap {
+    flex-wrap: wrap;
+  }
+  .rectangle-4-copy-4 {
+    display: none;
+  }
+  .table {
+    &__mobile {
+    height: 140px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+      .mobile-wrap {
+        margin: auto 1em;
+        height: 140px;
+        width: 310px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        .block {
+          margin-top: 0px;
+          .title {
+            margin-bottom: 0px;
+          }
+          .features {
+            margin: -8px auto 16px; 
+          }
+        }
+      }
+      .oko {
+        position: absolute;
+        top: 23px;
+        right: 14px;
+      }
+      span {
+        font-size: 10px;
+      }
+    }
+    &__m {
+      display: none;
+    }
+    &__worth {
+      border-left: none;
+    }
+    &__action {
+      display: none;
+    }
+  }
+  .btn__invest {
+    width: 310px;
+  }
+  .btn__invest:hover {
+    width: 314px;
+  }
 }
